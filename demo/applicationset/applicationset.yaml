@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: demo-helm-common-chart
-  namespace: argocd
+  namespace: argo-cd
 spec:
   generators:
     - git:
@@ -13,7 +13,7 @@ spec:
           - path: demo/configs/*/*
   template:
     metadata:
-      namespace: argocd
+      namespace: argo-cd
       # you can use the path strings with / delimiter as variables
       name: "{{path[2]}}-{{path.basename}}"
     spec:
