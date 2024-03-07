@@ -16,10 +16,10 @@ spec:
       name: '{{namespace}}-color-app'
     spec:
       # applications will be in default project for argocd
-      project: default
+      project: kegmil-fsm-saas
       source:
         repoURL: https://github.com/vantamm27/ArgoCD-ApplicationSet-Demo.git
-        targetRevision: HEAD
+        targetRevision: main        
         path: list-generator-example/deployment
       destination:
         # default cluster as destination, you can define multiple clusters in ArgoCD UI

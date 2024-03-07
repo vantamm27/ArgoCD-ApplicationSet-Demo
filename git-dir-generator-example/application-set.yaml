@@ -6,7 +6,7 @@ spec:
   generators:
   - git:
       # git repository to get the variables from
-      repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
+      repoURL: https://github.com/vantamm27/ArgoCD-ApplicationSet-Demo.git
       # branch used to get the variables from 
       revision: HEAD
       directories:
@@ -20,7 +20,7 @@ spec:
       project: default
       source:
         # source repo, in this example both repositories are the same
-        repoURL: https://github.com/AmrAlaaYassen/ArgoCD-ApplicationSet-Demo.git
+        repoURL: https://github.com/vantamm27/ArgoCD-ApplicationSet-Demo.git
         targetRevision: HEAD
         # path to read manifests from, here it's the full path not only the name of the directory
         path: '{{path}}'
